@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+	font-family:arial;
+}
+.ListBoxRed {
+  border: 0px solid red;
+  background-color: red;    
+  text-align: center;
+  padding:5px;
+  margin-left:20px;
+  margin-right:20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color:white;
+  font-family: arial;
+}
+.ListBoxOrange {
+  border: 0px solid red;
+  background-color: orange;    
+  text-align: center;
+  padding:5px;
+  margin-left:20px;
+  margin-right:20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color:white;
+  font-family: arial;
+}
+
+.ListBoxOrange {
+  border: 0px solid red;
+  background-color: orange;    
+  text-align: center;
+  padding:5px;
+  margin-left:20px;
+  margin-right:20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color:white;
+  font-family: arial;
+}
+
+.ListBoxYellow {
+  border: 0px solid red;
+  background-color: gold;    
+  text-align: center;
+  padding:5px;
+  margin-left:20px;
+  margin-right:20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color:white;
+  font-family: arial;
+}
+
+.ListBoxSalmon {
+  border: 0px solid red;
+  background-color: salmon;    
+  text-align: center;
+  padding:5px;
+  margin-left:20px;
+  margin-right:20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color:white;
+  font-family: arial;
+}
+
+.ListBoxPurple {
+  border: 0px solid red;
+  background-color: purple;    
+  text-align: center;
+  padding:5px;
+  margin-left:20px;
+  margin-right:20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color:white;
+  font-family: arial;
+}
+
+a:link {
+  color: white;
+  text-decoration:none;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+  text-decoration:underline;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+  text-decoration:underline;
+}
+
+/* selected link */
+a:active {
+  color: white;
+  text-decoration:underline;
+} 
+.header {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: salmon;
+  color: white;
+}
+
+#navbar a.active {
+  background-color: red;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Lego Lord Gnome</h1>
+  <p>A place to show my Lego creations.</p>
+</div>
+
+<div id="navbar">
+  <a class="active" href="https://lordgnomembe.github.io/Lego">Home</a>
+  <a href="https://lordgnomembe.github.io/Lego/Models.html">Models</a>
+  <a href="https://lordgnomembe.github.io/Lego/Creations.html">Creations</a>
+</div>
+
+<div class="content">
+
+  <h1 style="text-align:center;">Models</h1>
+
+<div class="ListBoxRed">
+  <h2>Lego Cog Car</h2>
+  <p>A truck with lots of moving parts. Extension parts coming soon.</p>
+  <a href="https://lordgnomembe.github.io/Lego/CogCar.html" style="color:white">Go to model page &rarr;</a>
+  <p> </p>
+</div>
+
+<div class="ListBoxOrange">
+  <h2>New Model coming soon</h2>
+  <p>Check back for another model soon!</p>
+  <!--<a href="#" style="color:white">This is a link &rarr;</a>-->
+  <p> </p>
+</div>
+
+<div class="ListBoxYellow">
+  <h2>New Model coming soon</h2>
+  <p>Check back for another model soon!</p>
+  <!--<a href="#" style="color:white">This is a link &rarr;</a>-->
+  <p> </p>
+</div>
+
+<div class="ListBoxSalmon">
+  <h2>New Model coming soon</h2>
+  <p>Check back for another model soon!</p>
+  <!--<a href="#" style="color:white">This is a link &rarr;</a>-->
+  <p> </p>
+</div>
+
+<div class="ListBoxPurple">
+  <h2>New Model coming soon</h2>
+  <p>Check back for another model soon!</p>
+  <!--<a href="#" style="color:white">This is a link &rarr;</a>-->
+  <p> </p>
+</div>
+</div>
+
+
+<p style="text-align:center;">© Lord Gnome MBE 2022</p>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
